@@ -1,0 +1,99 @@
+We Can't Halt  
+What We Can't See.Parkinson's  c an bec ome a chr onic 
+disease managed f or dec ades, but 
+tha t futur e depends on some thing tha t 
+still does no t e xist: c on tinuous, pr ecise 
+and objec tiv e measur emen t o f ho w 
+the disease pr ogr esses.Dopa-X  w as built t o close this 
+gap , gener a ting the measur emen t 
+in f r astr uc tur e P ar k inson ' s has 
+ne v er had, t o halt it s pr ogr ession 
+and dr ama tic ally e x t end e ff ec tiv e 
+tr ea tmen t . F or the 15M+ people living w ith it , that vision c anno t c ome soon enough.0Appr o v ed tr ea tmen t s tha t slo w or st op P ar k inson ' s pr ogr ession.  
+No t f or lack o f tr y ing. F or lack o f c on tinuous, objec tiv e measur emen t .That is the missing X.Measuring Changes Everything.D i s e a s e  m o d i f i c a t i o nb e t t e r  c a r eF or the fir st time, A I- dr iv en c on tinuous 
+measur emen t giv es r esear cher s a r eal, 
+objec tiv e signal t o t est against , cr ea ting 
+the in f r astr uc tur e needed t o find disease -
+modif y ing tr ea tmen t s and dr ama tic ally 
+shor t ening the pa th t o answ er s.The same measur emen t lay er enables 
+impr o ving and op timizing the out c omes 
+f r om e xisting le v odopa ther ap y . The r igh t 
+dose, a t the r igh t time, e x t ending the 
+e ff ec tiv e tr ea tmen t w indo w t o 15 y ear s 
+and be y ond.Op en I n f rastru c ture. B uilt t o  b e Share d .A t it s c or e, Dopa- X  is de v eloping a multidimensional measur emen t sy st em in t egr a ting A I, 
+neur ophy siology , sensing, c omput a tional biology and c ellular biology , cr ea ting the fir st 
+objec tiv e r uler f or P ar k inson ' s.  
+W e ar e building the in f r astr uc tur e tha t mak es bo th possible: ac c eler a ting the pa th t o  
+disease -modif y ing tr ea tmen t s, and unlock ing the full po t en tial o f e xisting c ar e. D e v eloped  
+as a non-pr o fit , open-sour c e initia tiv e, built on e xisting t echnologies and av ailable t o the 
+en tir e c ommunity .
+Cur r ent  
+di sea se s t a teDi sea se 
+p r o gr e s sion 
+o ver timeW h a t ' s  h a p p e n i n g  n o w ?A  r eal- time snapsho t o f disease st a t e, 
+enabling smar t er , mor e pr ecise sy mp t om 
+managemen tA  longitudinal signal o f disease 
+pr ogr ession, enabling de v elopmen t o f 
+tr ea tmen t s tha t slo w or r e v er se itW h e r e  i s  i t  h e a d i n g ?
+I ntelligen c e L ayer :  a  c l o s e d - l o o p  s y s t e m  
+f o r  P a r k i n s o n ' s .0 1S e n s ePhy siologic al and 
+behavior al da t a, 
+c on tinuously c ollec t ed 
+w ithin and be y ond the 
+clinic al visitA n a l y z eD isease st a t e,  
+pr ogr ession pa tt er ns,  
+and tr ea tmen t r esponse0 20 3D e l i v e rA dap tiv e, da t a-in f or med 
+in t er v en tion o v er time . 
+A  signal pa tien t s, clinicians 
+and r esear cher s c an 
+finally ac t on.B uilt B y Multi d is c i p linary 
+P r ob le m- S o lvers.S ome pr oblems r e q uir e an unc ommon 
+c ombina tion o f people. Dopa- X br ings 
+t oge ther biologist s, phar mac ologist s, 
+phy sicist s, c omput a tional biologist s,  
+chemist s and A I specialist s, alongside deep -
+t ech and de f ense e xper tise, no t as an 
+in t er esting mix, but as the t eam this pr oblem 
+ac tually demands.F o u n d e d  b y  A c h i  K r a u zK r auz spen t 2 5 y ear s building sy st ems tha t 
+did no t y e t e xist , including Isr ael' s fir st pr iv a t e 
+spac ecr a f t t o the moon w ith S pac eI L . A f t er 
+being diagnosed w ith P ar k inson ' s, he chose 
+t o f ac e the challenge the w ay engineer s do: 
+b y building wha t is missing.T he W o r k  Has A lrea d y B egun.20 2620 2 7C omp l e teI n p r o gr e s sU p c omingU p c omingU p c omingF ounda tion &  
+P ar tner shipsPr oo f o f 
+C onc ep tC linic al 
+V alida tionR esear ch 
+D eplo y men tC linic al 
+A dop tionT eam, scien tific 
+f r ame w or k , and 
+initial ac ademic and 
+industr y 
+c ollabor a tions in 
+plac eD igit al biomar k er s 
+in t egr a tion and 
+r eal-w or ld da t a 
+ac q uisition 
+under w ayM ulti-sit e tr ials t o 
+v alida t e and r e fine 
+the in f r astr uc tur e 
+w ith par tner 
+institutionsIn f r astr uc tur e 
+r eleased t o the 
+P ar k inson ' s 
+r esear ch and 
+clinic al ec osy st emL ar ge -sc ale 
+implemen t a tion 
+acr oss clinic al and 
+r esear ch ne tw or k s 
+w or ldw ideJ o in U s.P h i l a n t h r o p i c  
+s u p p o r tS t r a t e g i c  
+p a r t n e r s h i pO p e n 
+C o l l a b o r a t i o nA c c eler a t e the w or k tha t 
+mo v es pr ecision neur ology 
+f r om c onc ep t t o clinic al 
+r eality .B r ing scien tific, clinic al or 
+institutional r each t o 
+str engthen and sc ale the 
+model.A dd e xper tise, ne tw or k s 
+or ac c ess t o a mission 
+alr eady in mo tion.L ear n mor e a t dopa- x. or g I n C o lla bo rati o n Withdopa- x. or g |hello@dopa- x. or g|+9 7 2  5 4 - 220 - 48 2 1|dopa- x

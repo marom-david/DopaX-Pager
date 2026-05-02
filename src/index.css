@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html, body {
+    @apply bg-bg-light text-brand-navy-dark font-outfit m-0 p-0 overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-rajdhani font-bold;
+  }
+}
+
+/* Base custom styles for resetting main container layout */
+#root {
+  @apply min-h-screen flex flex-col items-center w-full;
+}
