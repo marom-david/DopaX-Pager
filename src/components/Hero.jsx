@@ -1,23 +1,34 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import headerBg from '../assets/header-bg.svg';
 
 const Hero = () => {
   return (
-    <section className="relative w-full bg-brand-navy text-white min-h-screen overflow-hidden flex flex-col">
-      {/* Background Graphic (DNA Helix) */}
+    <section className="relative w-full bg-brand-navy-dark text-white min-h-screen overflow-hidden flex flex-col">
+      {/* CSS Noise Texture */}
+      <div className="absolute inset-0 w-full h-full opacity-[0.03] pointer-events-none mix-blend-overlay z-0" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
+
+      {/* Background Graphic */}
       <img 
-        src="/assets/background/Frame 4.svg" 
-        alt="Background DNA Graphic" 
-        className="absolute right-0 top-0 h-full w-auto object-cover opacity-90 pointer-events-none" 
+        src={headerBg} 
+        alt="" 
+        className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen pointer-events-none z-0 brightness-110" 
       />
       
       {/* Fallback placeholder if image is missing */}
       <div className="absolute right-0 top-0 h-full w-[40%] pointer-events-none"></div>
 
-      {/* Main Content Container aligned with Header (max-w-6xl px-8) */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-8 py-12 lg:py-16 flex flex-col items-start text-left flex-grow justify-center">
+      {/* Main Content Container aligned with Header */}
+      <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12 lg:py-16 flex flex-col items-start text-left flex-grow justify-center"
+      >
         
-        {/* Text Width Constraint (The 60% Split) with tightened vertical rhythm */}
-        <div className="w-full lg:w-3/5 flex flex-col items-start text-left gap-8 lg:gap-10">
+        {/* Text Width Constraint */}
+        <div className="w-full lg:w-3/4 xl:w-2/3 flex flex-col items-start text-left gap-8 lg:gap-10">
           
           {/* Prominent Logo Section */}
           <div className="flex flex-col items-start text-left w-full">
@@ -28,22 +39,25 @@ const Hero = () => {
             />
           </div>
 
-          {/* Headline */}
-          <h1 className="text-5xl md:text-6xl font-rajdhani font-bold leading-[1.1] text-white tracking-wide text-left w-full m-0 p-0">
-            We Can't Halt <br />
-            What We Can't See.
-          </h1>
+          {/* Headline Container with Glow */}
+          <div className="relative w-full">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-orange/15 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
+            <h1 className="text-5xl md:text-6xl font-rajdhani font-bold leading-[1.1] text-white tracking-wide text-left w-full m-0 p-0 relative z-10 drop-shadow-md">
+              We Can't Halt <br />
+              What We Can't See.
+            </h1>
+          </div>
           
           {/* Two Column Text (Paragraph Proportions) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 w-full text-left">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 w-full text-left relative z-10">
             <div className="flex flex-col items-start">
-              <p className="text-[17px] font-outfit text-gray-light leading-relaxed font-light text-left m-0 p-0">
-                <span className="text-xl font-normal text-white">Parkinson's</span> can become a chronic disease managed for decades, but that future depends on something that still does not exist: continuous, precise and objective measurement of how the disease progresses.
+              <p className="text-lg lg:text-xl font-outfit text-gray-200 leading-relaxed font-light text-left m-0 p-0 drop-shadow-md">
+                <span className="text-xl lg:text-2xl font-normal text-white">Parkinson's</span> can become a chronic disease managed for decades, but that future depends on something that still does not exist: continuous, precise and objective measurement of how the disease progresses.
               </p>
             </div>
             <div className="flex flex-col items-start">
-              <p className="text-[17px] font-outfit text-gray-light leading-relaxed font-light text-left m-0 p-0">
-                <span className="text-xl font-normal text-white">Dopa-X</span> was built to close this gap, generating the measurement infrastructure Parkinson's has never had, to halt its progression and dramatically extend effective treatment.
+              <p className="text-lg lg:text-xl font-outfit text-gray-200 leading-relaxed font-light text-left m-0 p-0 drop-shadow-md">
+                <span className="text-xl lg:text-2xl font-normal text-white">Dopa-X</span> was built to close this gap, generating the measurement infrastructure Parkinson's has never had, to halt its progression and dramatically extend effective treatment.
               </p>
             </div>
           </div>
@@ -58,7 +72,7 @@ const Hero = () => {
           </div>
 
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
