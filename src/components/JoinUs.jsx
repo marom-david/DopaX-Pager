@@ -1,7 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import joinUsBg from '../assets/bg-07.svg';
-
 const JoinUs = () => {
   const cards = [
     {
@@ -21,11 +19,55 @@ const JoinUs = () => {
   return (
     <section className="w-full bg-[#EAEAF5] py-24 relative overflow-hidden">
       {/* Faint DNA Background Graphic */}
-      <img 
-        src={joinUsBg} 
-        alt="" 
-        className="absolute inset-0 w-full h-full object-cover opacity-50 mix-blend-multiply pointer-events-none z-0" 
-      />
+      <svg width="100%" height="100%" viewBox="0 0 1000 431" fill="none" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" className="absolute inset-0 pointer-events-none z-0 opacity-50 mix-blend-multiply">
+<g clipPath="url(#clip0_44_674)">
+<rect width="1000" height="431" fill="white"/>
+<rect width="1000" height="431" fill="#2828C6" fillOpacity="0.2"/>
+<rect width="1000" height="431" fill="url(#pattern0_44_674)" fillOpacity="0.05"/>
+<g opacity="0.3">
+<g opacity="0.3">
+<path d="M495.841 131.018L418.667 226.852L345.87 317.295L337.52 327.699C313.687 357.315 276.396 374.781 236.755 374.781L154.068 374.781L273.073 226.852L345.87 136.409L354.219 126.006C377.809 96.6176 414.694 79.3036 453.93 78.9999C454.254 78.9999 454.66 78.9999 454.984 78.9999L536.617 78.9998C536.617 78.9998 537.347 78.9998 537.671 78.9998L495.76 131.018L495.841 131.018Z" fill="#131354"/>
+<path d="M500.158 131.018L577.333 226.852L650.129 317.295L658.479 327.699C682.312 357.315 719.603 374.781 759.244 374.781L841.931 374.781L722.926 226.852L650.129 136.409L641.78 126.006C618.19 96.6176 581.305 79.3036 542.069 78.9999C541.745 78.9999 541.339 78.9999 541.015 78.9999L459.382 78.9999C459.382 78.9999 458.653 78.9999 458.328 78.9999L500.239 131.018L500.158 131.018Z" fill="url(#paint0_linear_44_674)"/>
+</g>
+<g opacity="0.3">
+<path d="M1077.84 131.018L1000.67 226.852L927.87 317.295L919.52 327.699C895.687 357.315 858.396 374.781 818.755 374.781L736.068 374.781L855.073 226.852L927.87 136.409L936.219 126.006C959.809 96.6176 996.694 79.3036 1035.93 78.9999C1036.25 78.9999 1036.66 78.9999 1036.98 78.9999L1118.62 78.9998C1118.62 78.9998 1119.35 78.9998 1119.67 78.9998L1077.76 131.018L1077.84 131.018Z" fill="#131354"/>
+</g>
+<g opacity="0.3">
+<path d="M-77.842 131.018L-0.667493 226.852L72.1294 317.295L80.4791 327.699C104.312 357.315 141.603 374.781 181.244 374.781L263.931 374.781L144.926 226.852L72.1294 136.409L63.7796 126.006C40.1895 96.6176 3.30466 79.3036 -35.9311 78.9999C-36.2554 78.9999 -36.6606 78.9999 -36.9849 78.9999L-118.618 78.9999C-118.618 78.9999 -119.347 78.9999 -119.672 78.9999L-77.7609 131.018L-77.842 131.018Z" fill="url(#paint1_linear_44_674)"/>
+</g>
+</g>
+</g>
+<defs>
+
+<linearGradient id="paint0_linear_44_674" x1="801.641" y1="405.384" x2="551.908" y2="70.2291" gradientUnits="userSpaceOnUse">
+<stop offset="0.31" stopColor="#FF5C35"/>
+<stop offset="0.33" stopColor="#EE5740"/>
+<stop offset="0.43" stopColor="#BA4B63"/>
+<stop offset="0.53" stopColor="#8D4081"/>
+<stop offset="0.62" stopColor="#68379A"/>
+<stop offset="0.72" stopColor="#4C30AD"/>
+<stop offset="0.81" stopColor="#382BBB"/>
+<stop offset="0.91" stopColor="#2C28C3"/>
+<stop offset="1" stopColor="#2828C6"/>
+</linearGradient>
+<linearGradient id="paint1_linear_44_674" x1="223.641" y1="405.384" x2="-26.0916" y2="70.2291" gradientUnits="userSpaceOnUse">
+<stop offset="0.31" stopColor="#FF5C35"/>
+<stop offset="0.33" stopColor="#EE5740"/>
+<stop offset="0.43" stopColor="#BA4B63"/>
+<stop offset="0.53" stopColor="#8D4081"/>
+<stop offset="0.62" stopColor="#68379A"/>
+<stop offset="0.72" stopColor="#4C30AD"/>
+<stop offset="0.81" stopColor="#382BBB"/>
+<stop offset="0.91" stopColor="#2C28C3"/>
+<stop offset="1" stopColor="#2828C6"/>
+</linearGradient>
+<clipPath id="clip0_44_674">
+<rect width="1000" height="431" fill="white"/>
+</clipPath>
+
+</defs>
+</svg>
+
 
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
