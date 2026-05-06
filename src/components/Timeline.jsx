@@ -37,39 +37,39 @@ const Timeline = () => {
 
   return (
     <section className="w-full bg-[#F9FAFB] py-24">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16"
       >
-        
+
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-rajdhani font-bold text-brand-navy-dark leading-tight mb-8 text-center">
           The Work Has Already Begun.
         </h2>
-        
+
         {/* Timeline Container */}
         <div className="relative w-full">
-          
+
           {/* Axis Wrapper (Sticky Timeline Axis) */}
           <div className="hidden md:flex relative w-full items-center h-16 mb-8 mt-12 sticky top-20 z-40 bg-[#F9FAFB]/90 backdrop-blur-md">
-            
+
             {/* The Line */}
             <div className="absolute left-0 right-0 h-[2px] bg-[#1E1E46] z-0"></div>
-            
+
             {/* Right-pointing Arrow */}
             <div className="absolute right-0 w-0 h-0 border-y-[5px] border-y-transparent border-l-[6px] border-l-[#1E1E46] z-0"></div>
-            
+
             {/* The Nodes Container */}
             <div className="relative z-10 w-full flex justify-around items-center px-4">
               {phases.map((phase, idx) => (
                 <div key={`node-${idx}`} className="relative flex flex-col items-center w-full">
-                  
+
                   {/* The Dot */}
                   <div className="w-4 h-4 rounded-full bg-[#1E1E46] border-2 border-white z-10"></div>
-                  
+
                   {/* The Date Pill */}
                   {phase.year && (
                     <div className="absolute -top-12 bg-white border border-gray-200 shadow-sm rounded-full px-4 py-1 text-sm font-rajdhani font-bold tracking-widest text-[#1E1E46]">
@@ -79,18 +79,18 @@ const Timeline = () => {
                 </div>
               ))}
             </div>
-            
+
           </div>
-          
+
           {/* The 5-Column Grid for Cards */}
           <div className="w-full grid grid-cols-1 md:grid-cols-5 gap-4 relative z-10">
             {phases.map((phase, idx) => {
-              
+
               // Determine Card Styling based on strictly defined status
               let cardBg = "bg-white";
               let cardBorder = "border-2 border-gray-200";
               let statusColor = "text-gray-400";
-              
+
               if (phase.status === "COMPLETE") {
                 cardBg = "bg-gray-100";
                 cardBorder = "border-2 border-brand-blue";
@@ -103,22 +103,22 @@ const Timeline = () => {
 
               return (
                 <div key={`card-${idx}`} className="flex flex-col relative w-full mt-8 md:mt-0">
-                  
+
                   {/* The Card */}
                   <div className={`rounded-[2rem] p-6 flex flex-col items-start text-left ${cardBg} ${cardBorder} shadow-sm h-full transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-brand-orange`}>
-                    
+
                     <span className={`text-[10px] font-outfit font-bold uppercase tracking-widest mb-4 ${statusColor}`}>
                       {phase.status}
                     </span>
-                    
+
                     <h3 className="font-rajdhani font-bold text-brand-navy-dark text-[17px] mb-3 leading-tight">
                       {phase.title}
                     </h3>
-                    
+
                     <p className="font-outfit text-gray-500 text-[13px] leading-relaxed m-0">
                       {phase.desc}
                     </p>
-                    
+
                   </div>
 
                 </div>
