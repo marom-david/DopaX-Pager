@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import bg06 from '../assets/bg-06.svg';
 
 const Timeline = () => {
   const phases = [
@@ -36,7 +37,9 @@ const Timeline = () => {
   ];
 
   return (
-    <section className="w-full bg-[#F9FAFB] py-24">
+    <section className="w-full bg-[#F9FAFB] py-24 relative overflow-hidden">
+      <img src={bg06} className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" alt="Timeline Background" />
+      <div className="relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -129,6 +132,7 @@ const Timeline = () => {
         </div>
 
       </motion.div>
+      </div>
     </section>
   );
 };

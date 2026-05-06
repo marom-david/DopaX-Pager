@@ -1,15 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import containerBg from '../assets/Container.svg';
+import bg04 from '../assets/bg-04.svg';
 const Infrastructure = () => {
   return (
-    <section className="w-full bg-[#E6E6F4] py-24">
+    <section className="w-full relative overflow-hidden pt-24 pb-20 bg-[#E6E6F4]">
+      <img src={bg04} className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" alt="bg top" />
+      
+
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="max-w-5xl mx-auto flex flex-col gap-6 w-full px-6 md:px-12"
+        className="relative z-10 max-w-5xl mx-auto flex flex-col gap-6 w-full px-6 md:px-12"
       >
         
         {/* Top Text Card */}
@@ -35,19 +39,22 @@ const Infrastructure = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* Left Column Card (Graph 1) */}
-          <div className="bg-brand-navy-dark rounded-[3rem] p-10 md:p-12 flex flex-col items-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-brand-orange border border-transparent">
-            <img 
-              src="/assets/graphs/graph-01.svg" 
-              alt="Current State Graph" 
-              className="w-3/4 max-w-[280px] mx-auto mb-8 object-contain"
-            />
-            <div className="w-full text-left mt-auto">
-              <h3 className="text-3xl font-rajdhani font-bold text-white uppercase tracking-tight mb-4 m-0">
-                WHAT'S HAPPENING NOW?
-              </h3>
-              <p className="font-outfit text-gray-light leading-relaxed text-[17px] m-0">
-                A real-time snapshot of disease state, enabling smarter, more precise symptom management.
-              </p>
+          <div className="bg-brand-navy-dark rounded-[3rem] p-10 md:p-12 flex flex-col items-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-brand-orange border border-transparent relative overflow-hidden">
+            <img src={containerBg} alt="" className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" />
+            <div className="relative z-10 flex flex-col items-center w-full h-full">
+              <img 
+                src="/assets/graphs/graph-01.svg" 
+                alt="Current State Graph" 
+                className="w-3/4 max-w-[280px] mx-auto mb-8 object-contain"
+              />
+              <div className="w-full text-left mt-auto">
+                <h3 className="text-3xl font-rajdhani font-bold text-white uppercase tracking-tight mb-4 m-0">
+                  WHAT'S HAPPENING NOW?
+                </h3>
+                <p className="font-outfit text-gray-light leading-relaxed text-[17px] m-0">
+                  A real-time snapshot of disease state, enabling smarter, more precise symptom management.
+                </p>
+              </div>
             </div>
           </div>
           

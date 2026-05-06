@@ -1,9 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import bg02 from '../assets/bg-02.svg';
 
 const MissingX = () => {
   return (
-    <section className="w-full bg-bg-light pt-20 pb-8 flex flex-col justify-center border-b border-gray-light/30">
+    <section className="w-full bg-bg-light pt-20 pb-8 flex flex-col justify-center border-b border-gray-light/30 relative overflow-hidden">
+      <img src={bg02} className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" alt="measurements bg" />
+      <div className="relative z-10">
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -36,6 +39,7 @@ const MissingX = () => {
         </div>
 
       </motion.div>
+      </div>
     </section>
   );
 };
