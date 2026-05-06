@@ -10,7 +10,7 @@ const IntelligenceLayer = () => {
       <svg width="100%" height="100%" viewBox="0 0 1000 320" fill="none" xmlns="http://www.w3.org/2000/svg"  preserveAspectRatio="xMidYMid slice" className="absolute inset-0 pointer-events-none z-0 opacity-60 mix-blend-screen brightness-125">
 <g clipPath="url(#clip0_44_571)">
 <rect width="1000" height="320" fill="#0F0F3D"/>
-<rect width="1000" height="320" fill="url(#pattern0_44_571)" fillOpacity="0.15" style="mix-blend-mode:exclusion"/>
+<rect width="1000" height="320" fill="url(#pattern0_44_571)" fillOpacity="0.15" style={{ mixBlendMode: 'exclusion' }}/>
 <g opacity="0.2">
 <path d="M32.9897 223.495L93.7365 142.967L151.038 66.9698L157.61 58.2279C176.37 33.3421 205.722 18.6659 236.925 18.6659L302.011 18.6659L208.339 142.967L151.038 218.964L144.465 227.706C125.897 252.401 96.8631 266.949 65.9792 267.204C65.724 267.204 65.405 267.204 65.1498 267.204H0.89343C0.89343 267.204 0.319112 267.204 0.0638733 267.204L33.0534 223.495H32.9897Z" fill="url(#paint0_linear_44_571)"/>
 <path d="M269.022 223.495L302.011 267.205C332.895 266.949 361.865 252.337 380.497 227.706L387.069 218.965L329.768 142.967L269.022 223.495Z" fill="url(#paint1_linear_44_571)"/>
