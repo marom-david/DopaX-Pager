@@ -11,12 +11,12 @@ const Footer = () => {
         </h2>
         
         {/* Strictly sized full-color logo grid */}
-        <div className="flex flex-wrap justify-center items-center gap-12 mt-12 w-full">
-          <img src="/assets/logos/image1.svg" alt="Partner Logo 1" className="h-14 w-auto object-contain" />
-          <img src="/assets/logos/image2.svg" alt="Partner Logo 2" className="h-14 w-auto object-contain" />
-          <img src="/assets/logos/image3.svg" alt="Partner Logo 3" className="h-14 w-auto object-contain" />
-          <img src="/assets/logos/image4.svg" alt="Partner Logo 4" className="h-14 w-auto object-contain" />
-          <img src="/assets/logos/image5.svg" alt="Partner Logo 5" className="h-14 w-auto object-contain" />
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mt-12 w-full">
+          <img src="/assets/logos/image2.svg" alt="IFM Logo" className="h-8 md:h-10 w-auto object-contain" />
+          <img src="/assets/logos/image1.svg" alt="Deepdub Logo" className="h-8 md:h-10 w-auto object-contain" />
+          <img src="/assets/logos/image3.svg" alt="IRON NATION Logo" className="h-8 md:h-10 w-auto object-contain" />
+          <img src="/assets/logos/image4.svg" alt="eyecuracy Logo" className="h-8 md:h-10 w-auto object-contain" />
+          <img src="/assets/logos/image5.svg" alt="Oruka Logo" className="h-8 md:h-10 w-auto object-contain" />
         </div>
       </div>
       
