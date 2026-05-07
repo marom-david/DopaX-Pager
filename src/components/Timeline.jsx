@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import bg06 from '../assets/bg-06.svg';
 
 const Timeline = () => {
+  const [bgLoaded, setBgLoaded] = useState(false);
   const phases = [
     {
       year: "2026",
@@ -38,11 +39,11 @@ const Timeline = () => {
 
   return (
     <section className="w-full bg-[#F9FAFB] py-24 relative overflow-hidden">
-      <img src={bg06} className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" alt="Timeline Background" />
+      <img src={bg06} className={`absolute inset-0 w-full h-full object-cover pointer-events-none z-0 transition-opacity duration-1000 ${bgLoaded ? 'opacity-100' : 'opacity-0'}`} alt="Timeline Background" onLoad={() => setBgLoaded(true)} />
       <div className="relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={bgLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16"

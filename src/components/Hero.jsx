@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import headerBg from '../assets/header-bg.svg';
 const Hero = () => {
+  const [bgLoaded, setBgLoaded] = useState(false);
   return (
     <section className="relative w-full bg-brand-navy-dark text-white min-h-screen overflow-hidden flex flex-col">
-      <img src={headerBg} className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" alt="hero bg" />
+      <img src={headerBg} className={`absolute inset-0 w-full h-full object-cover pointer-events-none z-0 transition-opacity duration-1000 ${bgLoaded ? 'opacity-100' : 'opacity-0'}`} alt="hero bg" onLoad={() => setBgLoaded(true)} />
 
       
 
@@ -14,7 +15,7 @@ const Hero = () => {
       {/* Main Content Container aligned with Header */}
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={bgLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-12 lg:py-16 flex flex-col items-start text-left flex-grow justify-center"

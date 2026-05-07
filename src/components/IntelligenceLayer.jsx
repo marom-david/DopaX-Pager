@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import bg05 from '../assets/bg-05.svg';
 const IntelligenceLayer = () => {
+  const [bgLoaded, setBgLoaded] = useState(false);
   return (
     <section className="w-full bg-brand-navy-dark pt-20 pb-24 relative overflow-hidden">
-      <img src={bg05} className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" alt="bg bottom" />
+      <img src={bg05} className={`absolute inset-0 w-full h-full object-cover pointer-events-none z-0 transition-opacity duration-1000 ${bgLoaded ? 'opacity-100' : 'opacity-0'}`} alt="bg bottom" onLoad={() => setBgLoaded(true)} />
       
       {/* Main Content */}
       <div className="relative z-10">
         <motion.div 
         initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={bgLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-stretch gap-12 px-6 md:px-12 lg:px-16 relative z-10"

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import frame12 from '../assets/Frame_12.svg';
 
 const Team = () => {
+  const [bgLoaded, setBgLoaded] = useState(false);
   return (
     <section className="w-full bg-white py-24">
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16 flex flex-col md:flex-row gap-16 items-center">
@@ -18,8 +19,8 @@ const Team = () => {
         
         {/* Right Column (Founder Card) */}
         <div className="w-full md:w-1/2 bg-[#FCEAE3] p-10 md:p-12 rounded-[3rem] shadow-sm flex flex-col items-center text-center relative overflow-hidden">
-          <img src={frame12} className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" alt="Founder Card Background" />
-          <div className="relative z-10 flex flex-col items-center">
+          <img src={frame12} className={`absolute inset-0 w-full h-full object-cover pointer-events-none z-0 transition-opacity duration-1000 ${bgLoaded ? 'opacity-100' : 'opacity-0'}`} alt="Founder Card Background" onLoad={() => setBgLoaded(true)} />
+          <div className={`relative z-10 flex flex-col items-center transition-opacity duration-1000 ${bgLoaded ? 'opacity-100' : 'opacity-0'}`}>
             <img 
               src="/assets/graphs/Achi-pic.svg" 
               alt="Achi Krauz" 

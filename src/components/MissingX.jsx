@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import bg02 from '../assets/bg-02.svg';
 
 const MissingX = () => {
+  const [bgLoaded, setBgLoaded] = useState(false);
   return (
     <section className="w-full bg-bg-light pt-20 pb-8 flex flex-col justify-center border-b border-gray-light/30 relative overflow-hidden">
-      <img src={bg02} className="absolute inset-0 w-full h-full object-cover pointer-events-none z-0" alt="measurements bg" />
+      <img src={bg02} className={`absolute inset-0 w-full h-full object-cover pointer-events-none z-0 transition-opacity duration-1000 ${bgLoaded ? 'opacity-100' : 'opacity-0'}`} alt="measurements bg" onLoad={() => setBgLoaded(true)} />
       <div className="relative z-10">
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={bgLoaded ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16 flex flex-row items-center justify-center gap-12 lg:gap-24"
